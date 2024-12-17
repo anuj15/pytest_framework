@@ -5,9 +5,9 @@ from selenium import webdriver
 from utilities.config_reader import ConfigReader
 
 
-class webdriver_manager(ConfigReader):
+class WebdriverManager(ConfigReader):
     def __init__(self):
-        super(webdriver_manager, self).__init__()
+        super(WebdriverManager, self).__init__()
 
     def launch_browser(self):
         dir_path = self.get_file_path("browsers")

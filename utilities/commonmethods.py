@@ -4,13 +4,13 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-from utilities.webdriver_manager import webdriver_manager
+from utilities.webdrivermanager import WebdriverManager
 
 
-class common_methods(webdriver_manager):
+class CommonMethods(WebdriverManager):
 
     def __init__(self):
-        super(common_methods, self).__init__()
+        super(CommonMethods, self).__init__()
 
     def wait_for_element(self, locator, timeout=10):
         try:

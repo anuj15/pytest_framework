@@ -1,7 +1,7 @@
-from utilities.common_methods import common_methods
+from utilities.commonmethods import CommonMethods
 
 
-class HomePage(common_methods):
+class HomePage(CommonMethods):
     # Defining locators
     this_is_a_link = "//a[text()='This is a link']"
 
