@@ -5,7 +5,7 @@ from pytest_bdd import given, when, then, scenario
 from pages import home_page
 
 homepage = home_page.HomePage()
-
+alert_box_locator = "//button[contains(text(), 'Generate Alert Box')]"
 
 @scenario(r'../features/automation_practice.feature', 'Check the link is working on the page')
 def test_scenario():
@@ -19,7 +19,7 @@ def i_am_on_the_practice_page():
 
 @when('user click on the link')
 def i_click_on_the_link():
-    homepage.click_on_element("//button[contains(text(), 'Generate Alert Box')]")
+    homepage.click_on_element(alert_box_locator)
     time.sleep(20)
 
 
