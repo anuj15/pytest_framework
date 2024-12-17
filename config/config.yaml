@@ -1,0 +1,7 @@
+'chrome_driver': 'chromedriver.exe'
+'firefox_driver': 'geckodriver.exe'
+'edge_driver': 'msedgedriver.exe'
+'current_execution_browser': 'edge_driver'
+'default_explicit_wait': 30
+'default_implicit_wait': 30
+'base_url': 'https://artoftesting.com/samplesiteforselenium'
