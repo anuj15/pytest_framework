@@ -1,7 +1,5 @@
-import selenium
-from selenium.webdriver.common.by import By
-
 from utilities.common_methods import common_methods
+
 
 class HomePage(common_methods):
     # Defining locators
@@ -10,11 +8,6 @@ class HomePage(common_methods):
     def __init__(self):
         super().__init__()
 
-
     def navigate_to_home_page(self):
         self.launch_browser()
         self.driver.get("https://artoftesting.com/samplesiteforselenium")
-
-
-
-

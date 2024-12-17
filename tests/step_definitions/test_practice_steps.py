@@ -5,6 +5,8 @@ from pytest_bdd import given, when, then, scenario
 from pages import home_page
 
 homepage = home_page.HomePage()
+
+
 @scenario(r'../features/automation_practice.feature', 'Check the link is working on the page')
 def test_scenario():
     pass
