@@ -35,3 +35,7 @@ class WebdriverManager(ConfigReader):
         self.driver.maximize_window()
         print("Browser Launch Completed")
         return self.driver
+
+    def tear_down(self):
+        self.driver.quit()
+        print("Browser closed")

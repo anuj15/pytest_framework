@@ -11,3 +11,5 @@ class HomePage(CommonMethods):
     def navigate_to_home_page(self):
         self.launch_browser()
         self.driver.get("https://artoftesting.com/samplesiteforselenium")
+
+
